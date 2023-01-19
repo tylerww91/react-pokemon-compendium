@@ -5,12 +5,12 @@ import PokemonCard from '../PokemonCard/PokemonCard.js';
 import Select from '../Controls/Select/Select.js';
 
 export default function Main() {
-  const { pokemon, types } = usePokemon();
+  const { pokemon, types, handleTypeChange } = usePokemon();
   console.log('types', types);
   return (
     <main>
       <div className="type-select">
-        <Select types={types} />
+        <Select {...{ types, handleTypeChange }} />
       </div>
       <div className="cards">
         {pokemon.map((poke) => (
