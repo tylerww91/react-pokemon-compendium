@@ -1,0 +1,9 @@
+.pokemonCard {
+  text-align: center;
+  border: solid 2px red;
+  width: 200px;
+}
+
+img {
+  width: 50px;
+}

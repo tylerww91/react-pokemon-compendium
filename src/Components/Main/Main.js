@@ -1,6 +1,7 @@
 import './Main.css';
 import React from 'react';
 import { usePokemon } from '../../Hooks/pokemon.js';
+import PokemonCard from '../PokemonCard/PokemonCard.js';
 
 export default function Main() {
   const { pokemon } = usePokemon();
@@ -9,7 +10,7 @@ export default function Main() {
     <main>
       <div>
         {pokemon.map((poke) => (
-          <p key={poke.id}>{poke.pokemon}</p>
+          <PokemonCard key={poke.id} {...poke} />
         ))}
       </div>
     </main>
