@@ -8,7 +8,7 @@ export default function Main() {
 
   return (
     <main>
-      <div>
+      <div className="cards">
         {pokemon.map((poke) => (
           <PokemonCard key={poke.id} {...poke} />
         ))}

@@ -1,5 +1,11 @@
 main {
   width: 100%;
   background-color: antiquewhite;
-  height: 100vh;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
