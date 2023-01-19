@@ -9,3 +9,9 @@ main {
   gap: 10px;
   justify-content: center;
 }
+
+.type-select {
+  display: flex;
+  height: 50px;
+  background-color: aquamarine;
+}

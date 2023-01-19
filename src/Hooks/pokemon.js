@@ -39,6 +39,7 @@ export function usePokemon() {
     e.preventDefault();
     const data = await fetchSearchedPokemon(searchedPokemon);
     setPokemon(data);
+    console.log('data', data);
   };
   return { pokemon, types, handleTypeChange, loading, handleSearch, setSearchedPokemon };
 }
