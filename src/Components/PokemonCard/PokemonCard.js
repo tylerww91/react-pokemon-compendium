@@ -12,3 +12,14 @@ export default function PokemonCard({ pokemon, weight, type_1, type_2, url_image
     </div>
   );
 }
+
+// const doubleType = ({ type_2 }) => {
+//   if (type_2.value === 'NA') {
+//     return '';
+//   } else if (type_2.value !== 'NA') {
+//     return type_2.value;
+//   }
+
+//   }
+
+// }

@@ -6,13 +6,14 @@ import Select from '../Controls/Select/Select.js';
 import Search from '../Controls/Search/Search.js';
 
 export default function Main() {
-  const { pokemon, types, handleTypeChange, handleSearch, setSearchedPokemon } = usePokemon();
+  const { pokemon, types, handleTypeChange, handleSearch, setSearchedPokemon, loading } =
+    usePokemon();
 
   return (
     <main>
       <div className="type-select">
         <Select {...{ types, handleTypeChange }} />
-        <Search {...{ handleSearch, setSearchedPokemon }} />
+        <Search {...{ handleSearch, setSearchedPokemon, loading }} />
       </div>
       <div className="cards">
         {pokemon.map((poke) => (

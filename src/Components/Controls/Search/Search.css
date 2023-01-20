@@ -1,1 +1,21 @@
+.poke-button {
+  width: 20px;
+}
 
+button {
+  width: 20px;
+  height: 20px;
+}
+
+.loading-button {
+  /* transform: rotate(359deg); */
+  animation: rotation 0.05s linear;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
