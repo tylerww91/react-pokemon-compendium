@@ -1,6 +1,5 @@
-main {
-  width: 100%;
-  background-color: antiquewhite;
+body {
+  background-color: #ddf0ec;
 }
 
 .cards {
@@ -11,7 +10,12 @@ main {
 }
 
 .type-select {
-  display: flex;
+  display: grid;
   height: 50px;
-  background-color: aquamarine;
+  background-color: #ddf0ec;
+  min-width: 200px;
+  justify-content: center;
+  grid-template-columns: 30% 70%;
+  padding: 30px;
+  gap: 5px;
 }

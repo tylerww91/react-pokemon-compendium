@@ -31,8 +31,10 @@ export function usePokemon() {
   }, []);
 
   const handleTypeChange = async (type) => {
+    setLoading(true);
     const data = await fetchFilteredPokemon(type);
     setPokemon(data);
+    setLoading(false);
   };
 
   const handleSearch = async (e) => {

@@ -1,10 +1,18 @@
-.poke-button {
-  width: 20px;
+button {
+  display: flex;
+  height: 50px;
+  min-width: 50px;
+  max-width: 50px;
+  justify-content: center;
+  background-color: #ddf0ec;
+  border: none;
 }
 
-button {
-  width: 20px;
-  height: 20px;
+.poke-button {
+  height: 50px;
+  min-width: 50px;
+  max-width: 50px;
+  padding-bottom: 5px;
 }
 
 .loading-button {
@@ -18,4 +26,10 @@ button {
   100% {
     transform: rotate(360deg);
   }
+}
+
+form {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: 50px;
 }
