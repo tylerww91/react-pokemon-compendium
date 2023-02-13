@@ -1,0 +1,35 @@
+button {
+  display: flex;
+  height: 50px;
+  min-width: 50px;
+  max-width: 50px;
+  justify-content: center;
+  background-color: #ddf0ec;
+  border: none;
+}
+
+.poke-button {
+  height: 50px;
+  min-width: 50px;
+  max-width: 50px;
+  padding-bottom: 5px;
+}
+
+.loading-button {
+  /* transform: rotate(359deg); */
+  animation: rotation 0.05s linear;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+form {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: 50px;
+}

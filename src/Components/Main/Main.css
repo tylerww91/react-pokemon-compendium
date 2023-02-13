@@ -1,0 +1,21 @@
+body {
+  background-color: #ddf0ec;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.type-select {
+  display: grid;
+  height: 50px;
+  background-color: #ddf0ec;
+  min-width: 200px;
+  justify-content: center;
+  grid-template-columns: 30% 70%;
+  padding: 30px;
+  gap: 5px;
+}
